@@ -50,6 +50,30 @@ let quotes = [
     source: 'Craig Mazin',
     citation: "HBO's Chernobyl",
     year: 2019
+  },
+  {
+    quote: "Some people can’t believe in themselves until someone else believes in them first.",
+    source: 'Matt Damon & Ben Affleck',
+    citation: 'Good Will Hunting',
+    year: 1997
+  },
+  {
+    quote: "Only Thing We Have to Fear Is Fear Itself.",
+    source: 'Franklin Delano Roosevelt',
+    year: 1933
+  },
+  {
+    quote: "That's one small step for [a] man, one giant leap for mankind.",
+    source: 'Neil Armstrong',
+    year: 1969
+  },
+  {
+    quote: "Never let the fear of striking out keep you from playing the game.",
+    source: 'Babe Ruth'
+  },
+  {
+    quote: "You miss 100 percent of the shots you never take.",
+    source: "Wayne Gretzky -Michael Scott"
   }
 ];
 
@@ -73,15 +97,15 @@ function getRandomQuote(arr) {
 
 function printQuote() {
   let randomQuote = getRandomQuote(quotes);
-  let HTMLString = `<p class="quote">"${randomQuote.quote}"</p>
-  <p class="source"> ${randomQuote.source}`
+  let HTMLString = `<p class="quote">${randomQuote.quote}</p>
+  <p class="source">${randomQuote.source}`
 
   if (randomQuote.citation) {
-    HTMLString += ` <span class="citation"> ${randomQuote.citation} </span>`;
+    HTMLString += `<span class="citation">${randomQuote.citation}</span>`;
   }
 
   if (randomQuote.year) {
-    HTMLString += `<span class="year"> ${randomQuote.year} </span>`;
+    HTMLString += `<span class="year">${randomQuote.year}</span>`;
   }
 
   HTMLString += `</p>`;
