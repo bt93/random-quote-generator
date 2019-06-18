@@ -115,4 +115,7 @@ function printQuote() {
 
 printQuote();
 
+// Calls the printQuote every 20 seconds
+let newInterval = setInterval(function() {printQuote()}, 20000);
+
 document.getElementById('loadQuote').addEventListener("click", printQuote, false);
