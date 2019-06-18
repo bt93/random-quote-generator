@@ -14,7 +14,56 @@ project 1 - A Random Quote Generator
   Add the `year` property to at least one object in the array.
   Use console.log() to log your array of quotes to the console.
 ***/
+let quotes = [
+  {
+    quote: "Don't cry because it's over, smile because it happened.",
+    source: 'Dr. Seuss'
+  },
+  {
+    quote: "Life is what happens when you’re busy making other plans.",
+    source: 'John Lennon',
+    citation: 'Beautiful Boy (Darling Boy)',
+    year: 1981
+  },
+  {
+    quote: "Get busy living or get busy dying.",
+    source: 'Stephen King',
+    citation: 'Rita Hayworth and Shawshank Redemption',
+    year: 1982
+  },
+  {
+    quote: "Twenty years from now you will be more disappointed by the things that you didn’t do than by the ones you did do.",
+    source: 'Mark Twain'
+  },
+  {
+    quote: "The opposite of love is not hate; it’s indifference.",
+    source: 'Elie Wiesel'
+  },
+  {
+    quote: "The future belongs to those who believe in the beauty of their dreams.",
+    source: 'Eleanor Roosevelt'
+  },
+  {
+    quote: "Not all those who wander are lost.",
+    source: 'J.R.R. Tolkien',
+    citation: 'The Lord of the Rings',
+    year: 1954
+  }, 
+  {
+    quote: "All those moments will be lost in time, like tears in rain.",
+    source: 'David Peoples',
+    citation: 'Blade Runner',
+    year: 1982
+  }, 
+  {
+    quote: "Every lie we tell incurs a debt to the truth. Sooner or later that debt is paid.",
+    source: 'Craig Mazin',
+    citation: "HBO's Chernobyl",
+    year: 2019
+  }
+];
 
+console.log(quotes);
 
 
 
@@ -23,8 +72,6 @@ project 1 - A Random Quote Generator
    - Create a variable to store a random number 
    - Cse the random number to `return` a random quote object from the `quotes` array.
 ***/
-
-
 
 
 /***
