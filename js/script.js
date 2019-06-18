@@ -72,7 +72,12 @@ console.log(quotes);
    - Create a variable to store a random number 
    - Cse the random number to `return` a random quote object from the `quotes` array.
 ***/
+function getRandomQuote(arr) {
+  let randomNum = Math.floor(Math.random() * arr.length) + 1
+  return quotes[randomNum];
+}
 
+getRandomQuote(quotes);
 
 /***
   Create the `printQuote` function to: 
