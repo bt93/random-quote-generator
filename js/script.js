@@ -129,6 +129,7 @@ function printQuote() {
 
   document.getElementById('quote-box').innerHTML = HTMLString;
   document.querySelector('body').style.backgroundColor = randomColor;
+  document.querySelector('button').style.backgroundColor = randomColor;
 }
 
 printQuote();
