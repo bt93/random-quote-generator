@@ -135,6 +135,14 @@ function printQuote() {
 printQuote();
 
 // Calls the printQuote every 20 seconds
-let newInterval = setInterval(function() {printQuote()}, 20000);
+let autoRefresh = setInterval(function() {printQuote()}, 20000);
 
-document.getElementById('loadQuote').addEventListener("click", printQuote, false);
+// Calls printQuote, clears interval and resets it when button is pressed
+function newInterval() {
+  printQuote();
+  clearInterval(autoRefresh);
+  autoRefresh = setInterval(function() {printQuote()}, 20000);
+}
+
+// Changed the event listener to call newInterval so it call clear and reset
+document.getElementById('loadQuote').addEventListener("click", newInterval, false);
