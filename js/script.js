@@ -144,5 +144,5 @@ function newInterval() {
   autoRefresh = setInterval(function() {printQuote()}, 20000);
 }
 
-// Changed the event listener to call newInterval so it call clear and reset
+// Changed the event listener to call newInterval so it clears and resets
 document.getElementById('loadQuote').addEventListener("click", newInterval, false);
